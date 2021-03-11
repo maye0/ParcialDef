@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gris"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="321dp"
+        android:layout_height="468dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/linia2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linia1">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_gravity=""
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/centro"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descrip"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/instru0"
+            android:textColor="#0E0E0E"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="280dp"
+            android:layout_height="46dp"
+            android:background="@drawable/text_usu_background"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:hint="@string/Nom_usu"
+            android:inputType="textEmailAddress"
+            android:textColor="#0C0C0C" />
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="280dp"
+            android:padding="10dp"
+            android:layout_height="46dp"
+            android:background="@drawable/text_usu_background"
+            android:hint="@string/contraseña"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberPassword"
+            android:textColor="#171616" />
+
+        <TextView
+            android:id="@+id/alerta"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:textColor="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hola"
+
+            />
+
+        <Button
+            android:id="@+id/botonC"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botton_background"
+            android:text="@string/to_continue"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintLeft_toLeftOf="@+id/linia1"
+        app:layout_constraintRight_toRightOf="@+id/linia2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
